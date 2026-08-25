@@ -10,11 +10,9 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #1a2e1a; }
 .ebook { max-width: 620px; margin: 0 auto; padding: 16px; }
-
 .lang-bar { display: flex; gap: 0; justify-content: center; margin-bottom: 20px; background: #ede8df; border-radius: 30px; padding: 4px; width: fit-content; margin-left: auto; margin-right: auto; }
 .lang-btn { padding: 10px 22px; border-radius: 26px; border: none; background: transparent; color: #7a6545; cursor: pointer; font-size: 14px; font-weight: 600; font-family: 'Inter', sans-serif; transition: all 0.2s; -webkit-tap-highlight-color: transparent; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
 .lang-btn.active { background: #2D6A4F; color: #fff; box-shadow: 0 2px 8px rgba(45,106,79,0.3); }
-
 .cover { border-radius: 20px; margin-bottom: 16px; overflow: hidden; position: relative; height: 260px; }
 .cover-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .cover-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,30,20,0.88) 0%, rgba(10,30,20,0.25) 60%, transparent 100%); }
@@ -24,12 +22,10 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #1a2e1a; }
 .cover-footer { display: flex; align-items: center; justify-content: space-between; }
 .cover-addr { font-size: 12px; color: rgba(255,255,255,0.65); }
 .cover-maplink { font-size: 12px; color: #74d9a8; font-weight: 600; text-decoration: none; }
-
 .section-card { background: #fff; border: 1.5px solid #ede8df; border-radius: 18px; margin-bottom: 14px; overflow: hidden; }
 .section-header { padding: 14px 18px 12px; border-bottom: 1.5px solid #f0ebe2; display: flex; align-items: center; gap: 10px; }
 .section-emoji { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
 .section-label { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 600; color: #1a2e1a; }
-
 .item-row { display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; border-bottom: 1px solid #f5f0ea; text-decoration: none; -webkit-tap-highlight-color: transparent; gap: 12px; }
 .item-row:last-child { border-bottom: none; }
 .item-left { display: flex; flex-direction: column; flex: 1; }
@@ -44,7 +40,6 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #1a2e1a; }
 .tag-red { background: #fdf0ee; color: #8a2a1a; }
 .tag-gray { background: #f3f0eb; color: #5a5040; }
 .item-arrow { font-size: 14px; color: #c8bfb0; }
-
 .resto-block { padding: 13px 18px; border-bottom: 1px solid #f5f0ea; }
 .resto-block:last-child { border-bottom: none; }
 .resto-sublabel { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #a0906e; margin-bottom: 9px; }
@@ -52,7 +47,6 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #1a2e1a; }
 .resto-tag { font-size: 13px; font-weight: 500; padding: 6px 13px; border-radius: 20px; text-decoration: none; -webkit-tap-highlight-color: transparent; }
 .tag-city { background: #fdf3e8; color: #7a4a10; border: 1.5px solid #f0d5b0; }
 .tag-sea { background: #edf6fb; color: #0c447c; border: 1.5px solid #b8d8eb; }
-
 .footer-note { text-align: center; padding: 16px 0 24px; font-size: 12px; color: #a0906e; line-height: 1.8; }
 .footer-note a { color: #2D6A4F; font-weight: 600; text-decoration: none; }
 </style>
@@ -85,7 +79,7 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #1a2e1a; }
       <div class="section-emoji" style="background:#e8f5ee;">&#127968;</div>
       <div class="section-label" id="sec1-title">Na aldeia — Amor</div>
     </div>
-    <a class="item-row" href="https://www.google.com/maps/dir//Continente+Leiria,+R.+Q.ta+do+Semin%C3%A1rio+Rua+do+Alto+do+Vieiro,+Leiria+Shopping,+IC2,+2400-441+Leiria,+Portugal/@48.8636416,2.5133056,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd22735a01d589b5:0x2cca47e21a5f8d57!2m2!1d-8.8235648!2d39.7326643?entry=ttu" target="_blank">
+    <a class="item-row" href="https://www.google.com/maps/search/Auchan+Amor+Rua+da+Serrada+2400-793+Portugal" target="_blank">
       <div class="item-left"><div class="item-name">Auchan Amor</div><div class="item-detail" id="auchan-d">Supermercado</div></div>
       <div class="item-right"><span class="item-tag tag-green" id="auchan-tag">Compras</span><span class="item-arrow">&#8599;</span></div>
     </a>
@@ -141,30 +135,29 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #1a2e1a; }
       <div class="item-left"><div class="item-name" id="castle-n">Castelo de Leiria</div><div class="item-detail" id="castle-d">Patrimonio historico</div></div>
       <div class="item-right"><span class="item-tag tag-amber" id="castle-tag">~10 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
+    <a class="item-row" href="https://www.google.com/maps/search/Termas+Monte+Real+Portugal" target="_blank">
+      <div class="item-left"><div class="item-name" id="thermal-n">Termas de Monte Real</div><div class="item-detail" id="thermal-d">Bem-estar e relaxamento</div></div>
+      <div class="item-right"><span class="item-tag tag-amber" id="thermal-tag">~10 km</span><span class="item-arrow">&#8599;</span></div>
+    </a>
     <a class="item-row" href="https://www.google.com/maps/search/Karting+Milagres+Portugal" target="_blank">
       <div class="item-left"><div class="item-name" id="karting-n">Karting de Milagres</div><div class="item-detail" id="karting-d">Diversao para todas as idades</div></div>
-      <div class="item-right"><span class="item-tag tag-amber" id="karting-tag">~15 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-amber" id="karting-tag">~10 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
     <a class="item-row" href="https://www.google.com/maps/search/Mosteiro+da+Batalha+Portugal" target="_blank">
       <div class="item-left"><div class="item-name" id="batalha-n">Mosteiro da Batalha</div><div class="item-detail" id="batalha-d">Patrimonio UNESCO</div></div>
-      <div class="item-right"><span class="item-tag tag-amber" id="batalha-tag">~16 km</span><span class="item-arrow">&#8599;</span></div>
-    </a>
-    <a class="item-row" href="https://www.google.com/maps/search/Termas+Monte+Real+Portugal" target="_blank">
-      <div class="item-left"><div class="item-name" id="thermal-n">Termas de Monte Real</div><div class="item-detail" id="thermal-d">Bem-estar e relaxamento</div></div>
-      <div class="item-right"><span class="item-tag tag-amber" id="thermal-tag">~20 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-amber" id="batalha-tag">~22 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
     <a class="item-row" href="https://www.google.com/maps/search/Santuario+Fatima+Portugal" target="_blank">
       <div class="item-left"><div class="item-name" id="fatima-n">Santuario de Fatima</div><div class="item-detail" id="fatima-d">+ Grutas de Mira de Aire</div></div>
-      <div class="item-right"><span class="item-tag tag-amber" id="fatima-tag">~40 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-amber" id="fatima-tag">~35 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
     <a class="item-row" href="https://www.google.com/maps/search/Obidos+Portugal" target="_blank">
       <div class="item-left"><div class="item-name">Obidos</div><div class="item-detail" id="obidos-d">Vila medieval murada</div></div>
-      <div class="item-right"><span class="item-tag tag-amber" id="obidos-tag">~80 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-amber" id="obidos-tag">~65 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
   </div>
 
-  <!-- BEACHES — ordre géo vérifié depuis Amor -->
-  <!-- Vieira ~20km, Sao Pedro ~22km, Pedrogao ~25km, Nazare ~45km, Figueira ~60km, Peniche ~100km, Berlengas ~110km -->
+  <!-- BEACHES -->
   <div class="section-card">
     <div class="section-header">
       <div class="section-emoji" style="background:#edf6fb;">&#127958;</div>
@@ -172,35 +165,35 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #1a2e1a; }
     </div>
     <a class="item-row" href="https://www.google.com/maps/search/Praia+de+Vieira+de+Leiria+Portugal" target="_blank">
       <div class="item-left"><div class="item-name">Vieira de Leiria</div><div class="item-detail" id="vieira-d">Praia</div></div>
-      <div class="item-right"><span class="item-tag tag-blue" id="vieira-tag">~20 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-blue" id="vieira-tag">~15 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
     <a class="item-row" href="https://www.google.com/maps/search/Mariparque+Vieira+de+Leiria+Portugal" target="_blank">
       <div class="item-left"><div class="item-name">Mariparque</div><div class="item-detail" id="mariparque-d">Parque aquatico</div></div>
-      <div class="item-right"><span class="item-tag tag-blue" id="mariparque-tag">~20 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-blue" id="mariparque-tag">~15 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
     <a class="item-row" href="https://www.google.com/maps/search/Praia+Sao+Pedro+de+Moel+Portugal" target="_blank">
       <div class="item-left"><div class="item-name">Sao Pedro de Moel</div><div class="item-detail" id="spedro-d">Praia</div></div>
-      <div class="item-right"><span class="item-tag tag-blue" id="spedro-tag">~22 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-blue" id="spedro-tag">~20 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
     <a class="item-row" href="https://www.google.com/maps/search/Praia+do+Pedrogao+Portugal" target="_blank">
       <div class="item-left"><div class="item-name" id="pedrogao-n">Praia do Pedrogao</div><div class="item-detail" id="pedrogao-d">Restaurantes a beira-mar</div></div>
-      <div class="item-right"><span class="item-tag tag-blue" id="pedrogao-tag">~25 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-blue" id="pedrogao-tag">~20 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
     <a class="item-row" href="https://www.google.com/maps/search/Praia+da+Nazare+Portugal" target="_blank">
       <div class="item-left"><div class="item-name">Nazare</div><div class="item-detail" id="nazare-d">Praia</div></div>
-      <div class="item-right"><span class="item-tag tag-blue" id="nazare-tag">~45 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-blue" id="nazare-tag">~30 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
     <a class="item-row" href="https://www.google.com/maps/search/Praia+Figueira+da+Foz+Portugal" target="_blank">
       <div class="item-left"><div class="item-name">Figueira da Foz</div><div class="item-detail" id="figueira-d">Praia + Casino</div></div>
-      <div class="item-right"><span class="item-tag tag-blue" id="figueira-tag">~60 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-blue" id="figueira-tag">~55 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
     <a class="item-row" href="https://www.google.com/maps/search/Praia+de+Peniche+Portugal" target="_blank">
       <div class="item-left"><div class="item-name">Peniche &middot; Baleal</div><div class="item-detail" id="peniche-d">Praia + acesso para Berlengas</div></div>
-      <div class="item-right"><span class="item-tag tag-blue" id="peniche-tag">~100 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-blue" id="peniche-tag">~90 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
     <a class="item-row" href="https://www.google.com/maps/search/Ilha+das+Berlengas+Portugal" target="_blank">
       <div class="item-left"><div class="item-name" id="berlengas-n">Ilha das Berlengas</div><div class="item-detail" id="berlengas-d">Reserva natural - barco desde Peniche</div></div>
-      <div class="item-right"><span class="item-tag tag-blue" id="berlengas-tag">~110 km</span><span class="item-arrow">&#8599;</span></div>
+      <div class="item-right"><span class="item-tag tag-blue" id="berlengas-tag">~100 km</span><span class="item-arrow">&#8599;</span></div>
     </a>
   </div>
 
@@ -262,20 +255,20 @@ var T = {
     'shopping-d':'Centro comercial com cinema','shopping-tag':'Shopping',
     'sec3-title':'Atividades e atracoes',
     'castle-n':'Castelo de Leiria','castle-d':'Patrimonio historico','castle-tag':'~10 km',
-    'karting-n':'Karting de Milagres','karting-d':'Diversao para todas as idades','karting-tag':'~15 km',
-    'batalha-n':'Mosteiro da Batalha','batalha-d':'Patrimonio UNESCO','batalha-tag':'~16 km',
-    'thermal-n':'Termas de Monte Real','thermal-d':'Bem-estar e relaxamento','thermal-tag':'~20 km',
-    'fatima-n':'Santuario de Fatima','fatima-d':'+ Grutas de Mira de Aire','fatima-tag':'~40 km',
-    'obidos-d':'Vila medieval murada','obidos-tag':'~80 km',
+    'thermal-n':'Termas de Monte Real','thermal-d':'Bem-estar e relaxamento','thermal-tag':'~10 km',
+    'karting-n':'Karting de Milagres','karting-d':'Diversao para todas as idades','karting-tag':'~10 km',
+    'batalha-n':'Mosteiro da Batalha','batalha-d':'Patrimonio UNESCO','batalha-tag':'~22 km',
+    'fatima-n':'Santuario de Fatima','fatima-d':'+ Grutas de Mira de Aire','fatima-tag':'~35 km',
+    'obidos-d':'Vila medieval murada','obidos-tag':'~65 km',
     'sec4-title':'Praias e lazer costeiro',
-    'vieira-d':'Praia','vieira-tag':'~20 km',
-    'mariparque-d':'Parque aquatico','mariparque-tag':'~20 km',
-    'spedro-d':'Praia','spedro-tag':'~22 km',
-    'pedrogao-n':'Praia do Pedrogao','pedrogao-d':'Restaurantes a beira-mar','pedrogao-tag':'~25 km',
-    'nazare-d':'Praia','nazare-tag':'~45 km',
-    'figueira-d':'Praia + Casino','figueira-tag':'~60 km',
-    'peniche-d':'Praia + acesso para Berlengas','peniche-tag':'~100 km',
-    'berlengas-n':'Ilha das Berlengas','berlengas-d':'Reserva natural - barco desde Peniche','berlengas-tag':'~110 km',
+    'vieira-d':'Praia','vieira-tag':'~15 km',
+    'mariparque-d':'Parque aquatico','mariparque-tag':'~15 km',
+    'spedro-d':'Praia','spedro-tag':'~20 km',
+    'pedrogao-n':'Praia do Pedrogao','pedrogao-d':'Restaurantes a beira-mar','pedrogao-tag':'~20 km',
+    'nazare-d':'Praia','nazare-tag':'~30 km',
+    'figueira-d':'Praia + Casino','figueira-tag':'~55 km',
+    'peniche-d':'Praia + acesso para Berlengas','peniche-tag':'~90 km',
+    'berlengas-n':'Ilha das Berlengas','berlengas-d':'Reserva natural - barco desde Peniche','berlengas-tag':'~100 km',
     'sec5-title':'Restaurantes','resto-city-lbl':'Em Leiria','resto-sea-lbl':'A beira-mar'
   },
   fr: {
@@ -293,20 +286,20 @@ var T = {
     'shopping-d':'Centre commercial avec cinema','shopping-tag':'Shopping',
     'sec3-title':'Activites et attractions',
     'castle-n':'Chateau de Leiria','castle-d':'Patrimoine historique','castle-tag':'~10 km',
-    'karting-n':'Karting de Milagres','karting-d':'Pour petits et grands','karting-tag':'~15 km',
-    'batalha-n':'Monastere de Batalha','batalha-d':'Patrimoine UNESCO','batalha-tag':'~16 km',
-    'thermal-n':'Thermes de Monte Real','thermal-d':'Bien-etre et detente','thermal-tag':'~20 km',
-    'fatima-n':'Sanctuaire de Fatima','fatima-d':'+ Grottes de Mira de Aire','fatima-tag':'~40 km',
-    'obidos-d':'Village medieval fortifie','obidos-tag':'~80 km',
+    'thermal-n':'Thermes de Monte Real','thermal-d':'Bien-etre et detente','thermal-tag':'~10 km',
+    'karting-n':'Karting de Milagres','karting-d':'Pour petits et grands','karting-tag':'~10 km',
+    'batalha-n':'Monastere de Batalha','batalha-d':'Patrimoine UNESCO','batalha-tag':'~22 km',
+    'fatima-n':'Sanctuaire de Fatima','fatima-d':'+ Grottes de Mira de Aire','fatima-tag':'~35 km',
+    'obidos-d':'Village medieval fortifie','obidos-tag':'~65 km',
     'sec4-title':'Plages et loisirs cotiers',
-    'vieira-d':'Plage','vieira-tag':'~20 km',
-    'mariparque-d':'Parc aquatique','mariparque-tag':'~20 km',
-    'spedro-d':'Plage','spedro-tag':'~22 km',
-    'pedrogao-n':'Plage de Pedrogao','pedrogao-d':'Restaurants en bord de mer','pedrogao-tag':'~25 km',
-    'nazare-d':'Plage','nazare-tag':'~45 km',
-    'figueira-d':'Plage + Casino','figueira-tag':'~60 km',
-    'peniche-d':'Plage + acces pour les Berlengas','peniche-tag':'~100 km',
-    'berlengas-n':'Ile des Berlengas','berlengas-d':'Reserve naturelle - bateau depuis Peniche','berlengas-tag':'~110 km',
+    'vieira-d':'Plage','vieira-tag':'~15 km',
+    'mariparque-d':'Parc aquatique','mariparque-tag':'~15 km',
+    'spedro-d':'Plage','spedro-tag':'~20 km',
+    'pedrogao-n':'Plage de Pedrogao','pedrogao-d':'Restaurants en bord de mer','pedrogao-tag':'~20 km',
+    'nazare-d':'Plage','nazare-tag':'~30 km',
+    'figueira-d':'Plage + Casino','figueira-tag':'~55 km',
+    'peniche-d':'Plage + acces pour les Berlengas','peniche-tag':'~90 km',
+    'berlengas-n':'Ile des Berlengas','berlengas-d':'Reserve naturelle - bateau depuis Peniche','berlengas-tag':'~100 km',
     'sec5-title':'Restaurants','resto-city-lbl':'En ville — Leiria','resto-sea-lbl':'En bord de mer'
   },
   en: {
@@ -324,20 +317,20 @@ var T = {
     'shopping-d':'Shopping mall with cinema','shopping-tag':'Shopping',
     'sec3-title':'Activities and attractions',
     'castle-n':'Leiria Castle','castle-d':'Historic heritage','castle-tag':'~10 km',
-    'karting-n':'Milagres Karting','karting-d':'Fun for all ages','karting-tag':'~15 km',
-    'batalha-n':'Batalha Monastery','batalha-d':'UNESCO World Heritage','batalha-tag':'~16 km',
-    'thermal-n':'Monte Real Thermal Spa','thermal-d':'Wellness and relaxation','thermal-tag':'~20 km',
-    'fatima-n':'Sanctuary of Fatima','fatima-d':'+ Mira de Aire Caves','fatima-tag':'~40 km',
-    'obidos-d':'Medieval walled town','obidos-tag':'~80 km',
+    'thermal-n':'Monte Real Thermal Spa','thermal-d':'Wellness and relaxation','thermal-tag':'~10 km',
+    'karting-n':'Milagres Karting','karting-d':'Fun for all ages','karting-tag':'~10 km',
+    'batalha-n':'Batalha Monastery','batalha-d':'UNESCO World Heritage','batalha-tag':'~22 km',
+    'fatima-n':'Sanctuary of Fatima','fatima-d':'+ Mira de Aire Caves','fatima-tag':'~35 km',
+    'obidos-d':'Medieval walled town','obidos-tag':'~65 km',
     'sec4-title':'Beaches and coastal leisure',
-    'vieira-d':'Beach','vieira-tag':'~20 km',
-    'mariparque-d':'Water park','mariparque-tag':'~20 km',
-    'spedro-d':'Beach','spedro-tag':'~22 km',
-    'pedrogao-n':'Pedrogao Beach','pedrogao-d':'Beachside restaurants','pedrogao-tag':'~25 km',
-    'nazare-d':'Beach','nazare-tag':'~45 km',
-    'figueira-d':'Beach + Casino','figueira-tag':'~60 km',
-    'peniche-d':'Beach + ferry to Berlengas','peniche-tag':'~100 km',
-    'berlengas-n':'Berlengas Island','berlengas-d':'Nature reserve - boat from Peniche','berlengas-tag':'~110 km',
+    'vieira-d':'Beach','vieira-tag':'~15 km',
+    'mariparque-d':'Water park','mariparque-tag':'~15 km',
+    'spedro-d':'Beach','spedro-tag':'~20 km',
+    'pedrogao-n':'Pedrogao Beach','pedrogao-d':'Beachside restaurants','pedrogao-tag':'~20 km',
+    'nazare-d':'Beach','nazare-tag':'~30 km',
+    'figueira-d':'Beach + Casino','figueira-tag':'~55 km',
+    'peniche-d':'Beach + ferry to Berlengas','peniche-tag':'~90 km',
+    'berlengas-n':'Berlengas Island','berlengas-d':'Nature reserve - boat from Peniche','berlengas-tag':'~100 km',
     'sec5-title':'Restaurants','resto-city-lbl':'In Leiria','resto-sea-lbl':'By the sea'
   }
 };
